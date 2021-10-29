@@ -1,0 +1,148 @@
+#header
+{
+	background-color: red;
+	height: 160px;
+	border: solid 4px;
+	display: flex;
+	justify-content: center;
+}
+#logo
+{
+	width: 220px;
+	height: 160px;
+	padding-right: 300px;
+}
+#payoff
+{
+	align-self: flex-end;
+	padding-right: 700px;
+}
+#title
+{
+	align-self: center;
+	padding-left: 250px;
+}
+#navigation
+{
+	font-size: 20px;
+	background-color: purple;
+	padding-top: 5px;
+    border: solid 2px;
+	margin-top: 5px;
+	text-align: center;
+	color: white;
+	display: flex;
+	padding-left: 100px;
+}
+#nav
+{ 
+	padding-left: 4px;
+}
+.navlist
+{
+	display: inline-block;
+	inline-size:455px;
+	padding: 20px;
+	border: solid 2px;
+	background-color: green;
+	margin-right: 20px;
+	margin-left: 20px;
+}
+
+
+a:link {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:visited {
+  color: purple;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+#video
+{ 
+	height: auto;
+	width: 100%;
+	border: 5px yellow;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	background-color: pink;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+#footer
+{
+	background-color: brown;
+}
+aside
+{
+	background-color: yellow;
+	display: flex;
+}
+#flex
+{
+	display: flex;
+	flex-flow: column-wrap;
+	height: 670px;
+}
+#article
+{	
+	flex: 1;
+	background-color: pink;
+}
+#flexheader
+{
+	display: flex;
+	justify-content: center;
+	background-color: orange;
+}
+#flexfooter
+{
+	display: flex;
+	background-color: grey;
+}
+#img
+{
+	float:right;
+	display: flex;
+	flex: 1;
+	position: relative;
+	width: 320px;
+	height: 180px;
+	margin: 5px;
+	margin-top: 15px;
+}
+#topdestinations
+{
+	padding-left: 20px;
+	padding-right: 10px;
+}
+#cookies
+{
+  position: fixed;
+  bottom: 1px;
+  left: 93%;
+  width: 5%;
+  height: 5%;
+  padding: 5px 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #FA0;
+  border-radius: 5px;
+  opacity: 50%;
+  color: #FFF;
+}
