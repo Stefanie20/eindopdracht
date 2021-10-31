@@ -10,17 +10,16 @@
 {
 	width: 220px;
 	height: 160px;
-	padding-right: 300px;
+	padding-right: 30%;
 }
 #payoff
 {
 	align-self: flex-end;
-	padding-right: 700px;
+	padding-right: 40%;
 }
 #title
 {
 	align-self: center;
-	padding-left: 250px;
 }
 #navigation
 {
@@ -45,8 +44,8 @@
 	padding: 20px;
 	border: solid 2px;
 	background-color: green;
-	margin-right: 20px;
-	margin-left: 20px;
+	margin-right: 2%;
+	margin-left: 2%;
 }
 
 
@@ -146,3 +145,82 @@ aside
   opacity: 50%;
   color: #FFF;
 }
+#grid
+{
+	display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+	'article1 article2 article3'
+	'article4 article5 article6'
+	'article7 article8 article9';
+	
+	
+	gap: 0px;
+   height: 300px;
+
+}
+#grid > article
+{
+	background-color: #EEE;
+	border: solid 2px;
+	padding: 20px 0;
+	text-align: center;
+
+}
+#article1
+{
+	grid-area: article1;
+	
+}
+#article2
+{
+	grid-area: article2;
+}
+#article3
+{
+	grid-area: article3;
+}
+#article4
+{
+	grid-area: article4;
+	grid-row: 2 / 4;
+}
+#article5
+{
+	grid-area: article5;
+}
+#article6
+{
+	grid-area: article6;
+}
+#article7
+{
+	grid-area: article7;
+}
+#article8
+{
+	grid-area: article8;
+	grid-column: 2 / 4;
+}
+#article9
+{
+	grid-area: article9;
+}
+#gridaside
+{
+	background-color: magenta;
+	text-align: center;
+	padding-left: 5px;
+	border: solid 2px;
+}
+
+#asideimg
+{
+	width: 450px;
+	height: 300px;
+	padding-left: 5%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+}
+	
