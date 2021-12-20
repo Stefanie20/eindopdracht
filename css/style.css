@@ -85,17 +85,22 @@ a:active {
 #footer
 {
 	background-color: brown;
+	width: 100%;
+	
 }
-aside
+#flexaside
 {
 	background-color: yellow;
 	display: flex;
+	position: fixed;
+	flex-shrink: 0;
+	flex-grow: 0;
 }
-#flex
+#flex	
 {
 	display: flex;
 	flex-flow: column-wrap;
-	height: 670px;
+	height: 200%;
 }
 #article
 {	
@@ -145,67 +150,63 @@ aside
   opacity: 50%;
   color: #FFF;
 }
-#grid
+#grid-container
 {
+	font-size: 20px;
 	display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: 
-	'article1 article2 article3'
-	'article4 article5 article6'
-	'article7 article8 article9';
+	grid-template-rows: repeat(8, 1fr);
+	grid-template-columns: repeat(3, 1fr);
 	
 	
 	gap: 0px;
    height: 300px;
 
 }
-#grid > article
+#grid-container > article
 {
 	background-color: #EEE;
 	border: solid 2px;
-	padding: 20px 0;
+	padding: 10px 10px;
 	text-align: center;
 
 }
+#grid-container > aside
+{
+	background-color: magenta;
+	text-align: center;
+	padding-left: 5px;
+	border: solid 2px;
+}
 #article1
 {
-	grid-area: article1;
-	
+	grid-row: 1/7;
+	grid-column: 2;
 }
 #article2
 {
-	grid-area: article2;
+	grid-row: 1/3;
+	grid-column: 1;
 }
 #article3
 {
-	grid-area: article3;
+	grid-row: 1/4;
+	grid-column: 3;
 }
 #article4
 {
-	grid-area: article4;
-	grid-row: 2 / 4;
+	grid-row: 4/7;
+	grid-column: 3;
 }
 #article5
 {
-	grid-area: article5;
+	grid-row: 4/8;
+	grid-column: 1;
 }
 #article6
 {
-	grid-area: article6;
+	grid-row: 7/8;
+	grid-column: 2/4;
 }
-#article7
-{
-	grid-area: article7;
-}
-#article8
-{
-	grid-area: article8;
-	grid-column: 2 / 4;
-}
-#article9
-{
-	grid-area: article9;
 }
 #gridaside
 {
@@ -214,7 +215,6 @@ aside
 	padding-left: 5px;
 	border: solid 2px;
 }
-
 #asideimg
 {
 	width: 450px;
@@ -223,4 +223,44 @@ aside
 	padding-top: 1%;
 	padding-bottom: 1%;
 }
-	
+#ticketarticle
+{
+	background-color: pink;
+	border: dotted 2px;
+	padding-left: 10px;
+	margin: 5px;
+}
+table
+{
+	width: 100%;
+}
+td, th
+{
+	border: solid 2px;
+	text-align: left;
+	padding: 8px;
+}
+th
+{
+	background-color: yellow;
+}
+tr
+{
+	background-color: green;
+}
+tr:nth-child(even)
+{
+	background-color: blue;
+} 
+#tablesection
+{
+	background-color: cyan;
+}
+#tablefooter
+{
+	background-color: magenta;
+}
+#copyright
+{
+	background-color: magenta;
+}
