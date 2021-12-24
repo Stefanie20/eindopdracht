@@ -17,7 +17,7 @@ body
 {
 	width: 220px;
 	height: 160px;
-	padding-right: 30%;
+	padding-right: 25%;
 }
 #payoff
 {
@@ -43,7 +43,6 @@ body
 #nav
 { 
 	padding-left: 4px;
-	display:absolute;
 }
 .navlist
 {
@@ -104,14 +103,9 @@ a:active {
 	flex-grow: 0;	
 	width: 25%;
 }
-h4
-{
-	color: ymck(0%, 22%, 83%, 0%);
-}
 #flex	
 {
 	display: flex;
-	flex-flow: column-wrap;
 	height: 200%;
 }
 #article
@@ -130,7 +124,7 @@ h4
 	display: flex;
 	background-color: grey;
 }
-#img
+.img
 {
 	float:right;
 	display: flex;
@@ -229,14 +223,19 @@ h4
 	grid-row: 7/8;
 	grid-column: 2/4;
 }
-}
-#gridaside
+.gridaside
 {
 	background-color: magenta;
 	padding-left: 5px;
 	border: solid 2px;
 }
-#asideimg
+#gridaside2
+{
+	background-color: magenta;
+	padding-left: 5px;
+	border: solid 2px;
+}
+.asideimg
 {
 	width: 450px;
 	height: 300px;
@@ -285,7 +284,14 @@ tr:first-child
 	background-color: #BA55D3;
 	margin-top: -2px;
 }
-#tableaside
+.tableaside
+{
+	padding-right: 40px;
+	padding-left: 40px;
+	border: dotted 5px;
+	background-color: #FF4500;
+}
+#tableaside1
 {
 	padding-right: 40px;
 	padding-left: 40px;
@@ -297,7 +303,7 @@ tr:first-child
 	float: right;
 	margin: 0px;
 }
-#imgs
+.imgs
 {
 	height: 230px;
 	width: 330px;
@@ -347,6 +353,16 @@ input[type=submit]:hover
   background-color: #45a049;
 }
 
+textarea 
+{
+    padding: 10px;
+    max-width: 100%;
+    line-height: 1.5;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px #999;
+}
+
 h4:first-letter
 {
 	font-size: 150%;
@@ -369,18 +385,36 @@ form
 }
 
 
+/* Tablet version */
 @media (max-width: 1180px)
 {
 	#img
 	{
 		float: left;
 	}
-	#flexaside
+	#article4
 	{
-		
+		display: none;
+	}
+	#gridaside2
+	{
+		display: none;
+	}
+	#asideimg
+	{
+		float:left;
+	}
+	#imgs
+	{
+		float:left;
+	}
+	#asides
+	{
+		display: none;
 	}
 }
 
+/* mobile version */
 @media (max-width: 480px)
 {
 #video
@@ -396,15 +430,12 @@ form
   display: block;
   position: relative;
   top: 50px;
-  left: 50px;
+  right: 50px;
   
   z-index: 1;
-  
-  -webkit-user-select: none;
-  user-select: none;
 }
 
-#menuToggle a
+#menuToggle + a
 {
   text-decoration: none;
   color: #232323;
@@ -431,7 +462,6 @@ form
   
   opacity: 0; 
   z-index: 2;
-  -webkit-touch-callout: none;
 }
 
 #menuToggle span
@@ -492,7 +522,6 @@ form
   
   background: #ededed;
   list-style-type: none;
-  -webkit-font-smoothing: antialiased;
   
   transform-origin: 0% 0%;
   transform: translate(-100%, 0);
@@ -509,6 +538,15 @@ form
 #menuToggle input:checked ~ ul
 {
   transform: none;
+}
+
+#article6
+{
+	display: none;
+}
+#ticketarticle
+{
+	display: none;
 }
 
 }

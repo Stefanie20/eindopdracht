@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-<html>
 <head>
+<meta charset="UTF-8">
 
 <title> Contact </title>
-<link rel ="icon" type="image" href="img/logo.png">
+<link rel ="icon" type="image/x-icon" href="img/logo.png">
 
 <link
     rel = "stylesheet"
@@ -40,6 +40,24 @@
 </ul>
 </nav>
 
+<nav id="hamburgermenu">
+  <article id="menuToggle">
+
+    <input type="checkbox" />
+
+    <span></span>
+    <span></span>
+    <span></span>
+    
+    <ul id="menu">
+      <li><a href="index.html">Index</a></li>
+      <li><a href="bestdestinations.html">Bestdestinations</a></li>
+      <li><a href="tickets.html">Tickets</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </article>
+</nav>
+
 
 <section id = "tablesection">
 <strong> Contact Information </strong>
@@ -50,46 +68,49 @@
 		<label for="name">Name:</label>
 		<input type="text" id="name" name="name" value="Typ hier je naam in">
 		<label for="email">Email:</label>
-		<input type="email" id="email" name="email" value="Typ hier je email in">
-		<label for="message">Message:</label>
-		<input type="text" id="message-box" name="message" value="Typ hier je bericht in">
+		<input type="email" id="email" name="email" value="Typ hier je email in">	
+		<textarea id="message" name="message"
+          rows="25" cols="115"> Typ je bericht hier... </textarea>
 		<input type="submit" value="Submit">
+		
+		
 	</fieldset>
 </form>
 
+
 <article id = "asides">
-<aside id = "tableaside">
+<aside class = "tableaside">
 <figure>
 	<a href = "https://www.tui.nl/reizen/frankrijk/">
 	<img  	
 		src="img/louvre.jpg" 
 		title ="louvre"
-		id = "imgs"/>
+		class = "imgs"/>
 	</a> 
 	<figcaption> Frankrijk </figcaption>
 </figure>
 </aside>
 
 
-<aside id ="tableaside"> 
+<aside class ="tableaside"> 
 <figure>
 <a href = "https://www.tui.nl/reizen/griekenland/">
 <img  		
 	src="img/greece.png" 
 	title ="greece"
-	id = "imgs"/>
+	class = "imgs"/>
 </a>
 <figcaption>Griekenland </figcaption>
 </figure>
 
 </aside>
-<aside id = "tableaside"> 
+<aside class = "tableaside"> 
 <figure>
 <a href = "https://www.tui.nl/reizen/verenigd-koninkrijk/">
 <img  	
 	src="img/uk.jpg" 
 	title ="uk"
-	id = "imgs"/>
+	class = "imgs"/>
 </a>
 <figcaption> Vereningd Koninkrijk </figcaption>
 </figure>

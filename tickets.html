@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<html>
+
 <head>
+<meta charset="UTF-8">
 
 <title> Tickets </title>
-<link rel ="icon" type="image" href="img/logo.png">
+<link rel ="icon" type="image/x-icon" href="img/logo.png">
 
 <link
     rel = "stylesheet"
@@ -42,6 +43,24 @@ De site geeft algemene informatie over de beste vakantiebestemmingen.">
 		<a href = "contact.html"> Contact </a>
     </li>
 </ul>
+</nav>
+
+<nav id="hamburgermenu">
+  <article id="menuToggle">
+
+    <input type="checkbox" />
+
+    <span></span>
+    <span></span>
+    <span></span>
+    
+    <ul id="menu">
+      <li><a href="index.html">Index</a></li>
+      <li><a href="bestdestinations.html">Bestdestinations</a></li>
+      <li><a href="tickets.html">Tickets</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </article>
 </nav>
 
 <article id = "ticketarticle">
@@ -191,35 +210,36 @@ vertrekken uit Amsterdam. </p>
 		<td> 7 uur 10 min </td>
 		<td> €339.99 </td>
 	</tr>
+</table>
 
 <article id ="asides">
-<aside id = "tableaside">
+<aside id = "tableaside1">
 	<a href = "https://www.tui.nl/reizen/frankrijk/">
 	<img  	
 		src="img/louvre.jpg" 
 		title ="louvre"
-		id = "imgs"/>
+		class = "imgs"/>
 	</a> 
 </aside>
-<aside id ="tableaside"> 
+<aside class ="tableaside"> 
 <a href = "https://www.tui.nl/reizen/griekenland/">
 <img  		
 	src="img/greece.png" 
 	title ="greece"
-	id = "imgs"/>
+	class = "imgs"/>
 </a>
 </aside>
-<aside id = "tableaside"> 
+<aside class = "tableaside"> 
 <a href = "https://www.tui.nl/reizen/verenigd-koninkrijk/">
 <img  	
 	src="img/uk.jpg" 
 	title ="uk"
-	id = "imgs"/>
+	class = "imgs"/>
 </a>
 </aside>
 </article>
 
-</table>
+
 <footer id = "tablefooter" > Source of data © 2021 TUI.nl </footer>
 
 
